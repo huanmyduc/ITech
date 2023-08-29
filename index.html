@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="./bootstrap-4.3.1-dist/js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./responsive.css">
     <title>ITech</title>
 </head>
 <body>
@@ -55,6 +52,7 @@
         </div>
         <div class="container">
             <div class="container__content">
+                <!-- navigation pc -->
                 <div class="navigation">
                     <div class="navigation__logo">
                         <img src="./img/logo.png" alt="">
@@ -85,6 +83,51 @@
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
+                </div>
+                <!-- navigation mobile -->
+                <div class="mobile__nav">
+                    <div class="nav__display">
+                        <label for="nav-mobile-input" class="nav__display-bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <div  class="nav__display-logo">
+                            <img src="./img/logo.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <input hidden type="checkbox"  name="" class="nav__input" id="nav-mobile-input">
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+                    <div class="nav__list">
+                       <label for="nav-mobile-input" class="nav__list-close">
+                        <i class="fa-solid fa-xmark"></i>
+                       </label>
+                        <ul>
+                            <li class="nav__list-link">
+                                <a href="">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav__list-link">
+                                <a href="">
+                                   Pages
+                                
+                                </a>
+                            </li>
+                           
+                            <li class="nav__list-link"><a href="">Portfolio</a></li>
+                            <li class="nav__list-link"><a href="">Blog</a></li>
+                            <li class="nav__list-link"><a href="">Contact</a></li>
+                            <li class="nav__list-profile" class="nav__list-profile">
+                                <img src="./img/profile.png" alt="">
+                                <button >Join ITech Hub
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+    
+                            </li>
+                        </ul>
+                    </div> 
+                       
+      
                 </div>
               </div>
               <div class="banner">
@@ -332,21 +375,21 @@
         <div class="review__left">
             <button class = "app__button">Testimonials</button>
 
-            <div class="row__title">
+            <div class="row__title row__title--res">
                 <p>Loved Form</p>
                 <span>Customers</span>
             </div>
             <div class="security__intro">Notero loved from thousands customer worldwide and get trusted from big companies</div>
             <div class="review__app">
                 <div class="review__app__content">
-                    <div class="content__line">
-                        <img style="width: 81px; padding-bottom: 3px;"  src="./img/testi_s4_ic1.png" alt="">
+                    <div class="content__line line__img--1">
+                        <img src="./img/testi_s4_ic1.png" alt="">
                         <p class="content__point">2.5M+</p>
                     </div>
                     <p style="padding-bottom: 4px;" class="content__description">Dowloaded and <br>Installation</p>
                 </div>
-                <div class="review__app__content">
-                    <img style="width: 69px;" src="./img/testi_s4_ic2.png" alt="">
+                <div class="review__app__content line__img--2">
+                    <img  src="./img/testi_s4_ic2.png" alt="">
                     <p class="content__point">4.8/5</p>
                     <p class="content__description"><img src="./img/star.png" alt=""><br>Based on 1,258 reviews</p>
                 </div>

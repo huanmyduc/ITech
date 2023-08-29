@@ -1,0 +1,154 @@
+.mobile__nav{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: none;
+}
+.nav__logo img{
+    width: 30px;
+}
+.nav__bars i{
+    color: #000;
+    width: 30px;
+    
+}
+.nav__list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+
+    
+}
+.nav__list-close i{
+    font-size: 18px;
+    color: var(--primary-color);
+    position: absolute ;
+    top: 10px;
+    right: 10px;
+    padding: 6px;
+}
+.nav__list ul{
+    margin-top: 35px;
+    list-style: none;
+   
+   
+}
+.nav__list a{
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.nav__list-link:hover {
+    background: red;
+}
+.nav__display{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 15px;
+
+}
+.nav__display-logo img{
+    width: 70px;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+.nav__list-profile{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.nav__list-profile img{
+    margin-right: 10px;
+    padding: 2px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+.nav__list-profile button {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+
+}
+
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+.nav__input:checked ~ .nav__list{
+    transform: translateX(0%);
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    top{
+        opacity: 1;
+    }
+}
+/* banner */
+<div class="mobile__nav">
+<div class="nav__display">
+    <label for="nav-mobile-input" class="nav__display-bars">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <div  class="nav__display-logo">
+        <img src="./img/logo.png" alt="">
+    </div>
+    
+</div>
+<input hidden type="checkbox"  name="" class="nav__input" id="nav-mobile-input">
+<label for="nav-mobile-input" class="nav__overlay"></label>
+<div class="nav__list">
+   <label for="nav-mobile-input" class="nav__list-close">
+    <i class="fa-solid fa-xmark"></i>
+   </label>
+    <ul>
+        <li class="nav__list-link">
+            <a href="">
+                Home
+            </a>
+        </li>
+        <li class="nav__list-link">
+            <a href="">
+               Pages
+            
+            </a>
+        </li>
+       
+        <li class="nav__list-link"><a href="">Portfolio</a></li>
+        <li class="nav__list-link"><a href="">Blog</a></li>
+        <li class="nav__list-link"><a href="">Contact</a></li>
+        <li class="nav__list-profile" class="nav__list-profile">
+            <img src="./img/profile.png" alt="">
+            <button >Join ITech Hub
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </li>
+    </ul>
+</div> 
+   
+
+</div>
